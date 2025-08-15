@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">Nuestras Habitaciones</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let habitacion of habitaciones">
+      <div class="card h-100">
+        <img [src]="habitacion.imagen" class="card-img-top" [alt]="habitacion.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{ habitacion.nombre }}</h5>
+          <p class="card-text">{{ habitacion.descripcion }}</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

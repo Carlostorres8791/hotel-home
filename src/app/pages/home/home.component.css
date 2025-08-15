@@ -1,0 +1,20 @@
+.back-blue {
+    background-color: #3c4c81 !important; /* Color personalizado */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* <- Esto evita que se recorte la imagen */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* invierte el blanco a negro */
+  z-index: 2;
+}
+
+.btn-uno, .btn-dos{
+  background-color: #3c4c81
+}
+
